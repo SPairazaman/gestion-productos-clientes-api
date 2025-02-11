@@ -6,6 +6,7 @@ namespace Infraestructure
     public class ProyectoFinalContext : DbContext
     {
         public DbSet<Producto> Productos { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
