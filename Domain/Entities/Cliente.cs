@@ -15,9 +15,10 @@ namespace Domain.Entities
         [StringLength(255)]
         public string Nombre { get; set; }
         [Required]
+        [StringLength(255)]
         public string Correo { get; set; }
         [StringLength(50)]
-        public string Telefono { get; set; }
+        public string? Telefono { get; set; }
         public DateTime FechaCreacion { get; set; }
         public bool Activo { get; set; }
     }
