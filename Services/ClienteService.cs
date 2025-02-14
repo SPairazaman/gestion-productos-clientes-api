@@ -20,7 +20,7 @@ namespace Services
 
                 if (!filtro.IsNullOrEmpty())
                 {
-                    query = query.Where(c => c.Nombre.Contains(filtro));
+                    query = query.Where(c => c.Nombre.Contains(filtro) || c.Correo.Contains(filtro) || c.Telefono.Contains(filtro));
                 }
                 return query.ToList();
             }
